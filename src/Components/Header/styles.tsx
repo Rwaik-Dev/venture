@@ -5,6 +5,7 @@ export const Container = styled.div`
   height: 60px;
   display: flex;
   justify-content: space-between;
+  margin-top: 5px ;
 `;
 export const Divider = styled.div`
   height: 100%;
