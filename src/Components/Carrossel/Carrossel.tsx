@@ -1,42 +1,50 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper";
-import "swiper/css";
-import { Container, Image, CenterCarosel } from "./style";
+import React, { useState } from "react";
+import { Container, CenterCarosel, DivImage, Image } from "./style";
 
 const Carrossel = () => {
+  const [translateValue, setTranslateValue] = useState("0%");
+
+  const currentTranslateValue = translateValue;
+
+  setInterval(function () {
+    switch (currentTranslateValue) {
+      case "0%":
+          console.log("Mudou pra 2")
+          setTranslateValue("-100%")
+        break;
+      case "-100%":
+        console.log("Mudou pra 3")
+        setTranslateValue("-200%")
+        break;
+      case "-200%":
+        console.log("Mudou pra 1")
+        setTranslateValue("0%")
+        break;
+      default:
+        console.log("Voltou pra 1")
+        setTranslateValue("0%")
+        break;
+    }
+  }, 7000);
+
   return (
     <Container>
       <CenterCarosel>
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={30}
-          loop={true}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[Pagination, Navigation]}
+        <DivImage
+          translateXValue={translateValue}
         >
-          <SwiperSlide>
-            <Image
-              src="https://i0.wp.com/diariodotransporte.com.br/wp-content/uploads/2017/07/auditoria-articulados.jpg?fit=3264%2C2448&ssl=1"
-              alt=""
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              src="https://cdn.pixabay.com/photo/2016/03/17/16/31/bus-1263266_960_720.jpg"
-              alt=""
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              src="https://images.unsplash.com/photo-1557223562-6c77ef16210f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-              alt=""
-            />
-          </SwiperSlide>
-        </Swiper>
+          Div 1
+        </DivImage>
+        <DivImage
+          translateXValue={translateValue}
+        >
+          Div 2
+        </DivImage>
+        <DivImage
+          translateXValue={translateValue}
+        >
+          Div 3
+        </DivImage>
       </CenterCarosel>
     </Container>
   );
