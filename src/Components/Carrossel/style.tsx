@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import { useState } from "react";
 
-interface DivImageProps{
-  translateXValue: string
+interface ImagePosterProps{
+  sourceBackgroundImage: string;
 }
 
 export const Container = styled.div`
@@ -10,28 +9,22 @@ export const Container = styled.div`
   width: 100%;
   margin-top: 20px;
 `;
-export const CenterCarosel = styled.div`
-  height: 650px;
-  display: flex ;
-  flex-direction: column ;
-  flex-wrap:wrap ;
-  overflow-x: hidden ;
-  border: solid 1px red;
-`;
-
-export const DivImage = styled.div<DivImageProps>`
-  width: 100vw;
+export const ImagePoster = styled.div<ImagePosterProps>`
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  font-weight: bold;
-  transform: translateX(${(props) => props.translateXValue});
-  transition: transform ease-out 0.45s ;
-  border: solid 1px;
+  width: 100% ;
+  display: flex ;
+  justify-content: space-between;
+  background-size: 100% 100%;
+  /* background-repeat: no-repeat; Colocar na responsividade quando a tela for menos que 1024px */
+  background-image:url(${(props) => props.sourceBackgroundImage}) ;
 `;
 
-export const Image = styled.img`
-  border: solid 1px blue;
-`;
+export const LeftControl = styled.div`
+  width: 30% ;
+  height: 100% ;
+`
+export const RightControl = styled.div`
+  width: 30% ;
+  height: 100% ;
+
+`
