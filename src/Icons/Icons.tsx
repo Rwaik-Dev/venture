@@ -1,18 +1,15 @@
-import { CSSProperties, SVGProps } from "react";
-
 interface IconsProps {
   width: string;
   height: string;
   className?: string;
 }
 
-export const Bus: React.FC<IconsProps> = ({ width, height, className }) => {
+export const Bus: React.FC<IconsProps> = ({ width, height }) => {
   return (
     <svg
       width={width}
       height={height}
       viewBox="0 0 1024 1024"
-      className={className}
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -64,17 +61,12 @@ export const Bus: React.FC<IconsProps> = ({ width, height, className }) => {
   );
 };
 
-export const MapMarker: React.FC<IconsProps> = ({
-  width,
-  height,
-  className,
-}) => {
+export const MapMarker: React.FC<IconsProps> = ({ width, height }) => {
   return (
     <svg
       width={width}
       height={height}
       viewBox="0 0 1024 1024"
-      className={className}
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -95,13 +87,12 @@ export const MapMarker: React.FC<IconsProps> = ({
   );
 };
 
-export const Marker: React.FC<IconsProps> = ({ width, height, className }) => {
+export const Marker: React.FC<IconsProps> = ({ width, height }) => {
   return (
     <svg
       width={width}
       height={height}
       viewBox="0 0 1024 1024"
-      className={className}
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -113,17 +104,12 @@ export const Marker: React.FC<IconsProps> = ({ width, height, className }) => {
   );
 };
 
-export const SimbolDollar: React.FC<IconsProps> = ({
-  width,
-  height,
-  className,
-}) => {
+export const SimbolDollar: React.FC<IconsProps> = ({ width, height }) => {
   return (
     <svg
       width={width}
       height={height}
       viewBox="0 0 1024 1024"
-      className={className}
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -139,13 +125,12 @@ export const SimbolDollar: React.FC<IconsProps> = ({
   );
 };
 
-export const Ticket: React.FC<IconsProps> = ({ width, height, className }) => {
+export const Ticket: React.FC<IconsProps> = ({ width, height }) => {
   return (
     <svg
       width={width}
       height={height}
       viewBox="0 0 1024 1024"
-      className={className}
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -181,17 +166,12 @@ export const Ticket: React.FC<IconsProps> = ({ width, height, className }) => {
   );
 };
 
-export const WaitingTime: React.FC<IconsProps> = ({
-  width,
-  height,
-  className,
-}) => {
+export const WaitingTime: React.FC<IconsProps> = ({ width, height }) => {
   return (
     <svg
       width={width}
       height={height}
       viewBox="0 0 1024 1024"
-      className={className}
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -243,7 +223,7 @@ export const WaitingTime: React.FC<IconsProps> = ({
   );
 };
 
-export const GitHubIcon: React.FC<IconsProps> = ({ height, width }) => {
+export const GitHubIcon: React.FC<IconsProps> = ({ width, height }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -269,7 +249,7 @@ export const InstagramLogo: React.FC<IconsProps> = ({ width, height }) => {
   );
 };
 
-export const LinkedInLogo: React.FC<IconsProps> = ({ width, height, className}) => {
+export const LinkedInLogo: React.FC<IconsProps> = ({ width, height }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -278,6 +258,58 @@ export const LinkedInLogo: React.FC<IconsProps> = ({ width, height, className}) 
       viewBox="0 0 448 512"
     >
       <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+    </svg>
+  );
+};
+
+export const BusIcon: React.FC<IconsProps> = ({ width, height }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={width}
+      height={height}
+      viewBox="0 0 512 512"
+    >
+      <path d="M488 128h-8V80c0-44.8-99.2-80-224-80S32 35.2 32 80v48h-8c-13.25 0-24 10.74-24 24v80c0 13.25 10.75 24 24 24h8v160c0 17.67 14.33 32 32 32v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h192v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h6.4c16 0 25.6-12.8 25.6-25.6V256h8c13.25 0 24-10.75 24-24v-80c0-13.26-10.75-24-24-24zM112 400c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm16-112c-17.67 0-32-14.33-32-32V128c0-17.67 14.33-32 32-32h256c17.67 0 32 14.33 32 32v128c0 17.67-14.33 32-32 32H128zm272 112c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z" />
+    </svg>
+  );
+};
+
+export const CompanyIcon: React.FC<IconsProps> = ({ width, height }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={width}
+      height={height}
+      viewBox="0 0 448 512"
+    >
+      <path d="M436 480h-20V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v456H12c-6.627 0-12 5.373-12 12v20h448v-20c0-6.627-5.373-12-12-12zM128 76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76zm0 96c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40zm52 148h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40c0 6.627-5.373 12-12 12zm76 160h-64v-84c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v84zm64-172c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12v-40c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40zm0-96c0 6.627-5.373 12-12 12h-40c-6.627 0-12-5.373-12-12V76c0-6.627 5.373-12 12-12h40c6.627 0 12 5.373 12 12v40z" />
+    </svg>
+  );
+};
+
+export const PeoplesIcons: React.FC<IconsProps> = ({ width, height }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={width}
+      height={height}
+      viewBox="0 0 640 512"
+    >
+      <path d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z" />
+    </svg>
+  );
+};
+
+export const CoinIcon: React.FC<IconsProps> = ({ width, height }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={width}
+      height={height}
+      viewBox="0 0 512 512"
+    >
+      <path d="M256 416c114.9 0 208-93.1 208-208S370.9 0 256 0 48 93.1 48 208s93.1 208 208 208zM233.8 97.4V80.6c0-9.2 7.4-16.6 16.6-16.6h11.1c9.2 0 16.6 7.4 16.6 16.6v17c15.5.8 30.5 6.1 43 15.4 5.6 4.1 6.2 12.3 1.2 17.1L306 145.6c-3.8 3.7-9.5 3.8-14 1-5.4-3.4-11.4-5.1-17.8-5.1h-38.9c-9 0-16.3 8.2-16.3 18.3 0 8.2 5 15.5 12.1 17.6l62.3 18.7c25.7 7.7 43.7 32.4 43.7 60.1 0 34-26.4 61.5-59.1 62.4v16.8c0 9.2-7.4 16.6-16.6 16.6h-11.1c-9.2 0-16.6-7.4-16.6-16.6v-17c-15.5-.8-30.5-6.1-43-15.4-5.6-4.1-6.2-12.3-1.2-17.1l16.3-15.5c3.8-3.7 9.5-3.8 14-1 5.4 3.4 11.4 5.1 17.8 5.1h38.9c9 0 16.3-8.2 16.3-18.3 0-8.2-5-15.5-12.1-17.6l-62.3-18.7c-25.7-7.7-43.7-32.4-43.7-60.1.1-34 26.4-61.5 59.1-62.4zM480 352h-32.5c-19.6 26-44.6 47.7-73 64h63.8c5.3 0 9.6 3.6 9.6 8v16c0 4.4-4.3 8-9.6 8H73.6c-5.3 0-9.6-3.6-9.6-8v-16c0-4.4 4.3-8 9.6-8h63.8c-28.4-16.3-53.3-38-73-64H32c-17.7 0-32 14.3-32 32v96c0 17.7 14.3 32 32 32h448c17.7 0 32-14.3 32-32v-96c0-17.7-14.3-32-32-32z" />
     </svg>
   );
 };
