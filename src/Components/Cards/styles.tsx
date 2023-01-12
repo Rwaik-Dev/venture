@@ -3,8 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 410px;
   height: 400px;
-  border: solid 1px;
-  background-color: #1449b4;
+  background-color: #008DE2;
   border-radius: 10px ;
   &:hover:not(:hover){
     opacity: 0.3 ;
