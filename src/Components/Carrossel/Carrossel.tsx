@@ -14,36 +14,36 @@ const Carrossel = () => {
     "https://wallpaperaccess.com/full/361074.jpg",
   ];
 
-  function nextImage() {
-    if (images.length - 1 === index) {
-      setSource(images[index])
-      setIndex(0);
-    } else {
-      setIndex(index + 1);
-      setSource(images[index]);
-
+  function nextImage(currentIndex: number) {
+    if (currentIndex === 0) {
+      // Verifica se e a primeira imagem e passa pra segunda
+      setSource(images[currentIndex + 1]);
+      return setIndex(currentIndex + 1);
     }
+    if (currentIndex === images.length - 1) {
+      // Verifica se e a ultima foto e passa pra primeira
+      setSource(images[0]);
+      return setIndex(0);
+    }
+    setSource(images[currentIndex + 1]);
+    return setIndex(currentIndex + 1);
   }
 
-  function previmage(){
-    console.log("Index recebido: " + index)
-    setIndex(index - 1)
-    console.log("Index Tratado" + index)
-
-    if(index === images.length - 1){
-      setSource(images[index])
-      setIndex(4)
-    }else{
-      setSource(images[index - 1])
-      setIndex(index - 1)
+  function previmage(currentIndex: number) {
+    if (currentIndex === 0) {
+      console.log("Voltando pra ultima foto");
+      setSource(images[currentIndex + images.length - 1]);
+      return setIndex(images.length - 1);
     }
+    setSource(images[currentIndex - 1]);
+    return setIndex(currentIndex - 1);
   }
 
   return (
     <Container>
       <ImagePoster sourceBackgroundImage={source}>
-        <LeftControl onClick={() => previmage()} />
-        <RightControl onClick={() => nextImage()} />
+        <LeftControl onClick={() => previmage(index)} />
+        <RightControl onClick={() => nextImage(index)} />
       </ImagePoster>
     </Container>
   );
