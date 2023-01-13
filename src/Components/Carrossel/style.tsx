@@ -5,7 +5,7 @@ interface ImagePosterProps{
 }
 
 export const Container = styled.div`
-  height: 650px;
+  height: 500px;
   width: 100%;
   margin-top: 20px;
 `;
@@ -15,8 +15,8 @@ export const ImagePoster = styled.div<ImagePosterProps>`
   display: flex ;
   justify-content: space-between;
   background-size: 100% 100%;
-  /* background-repeat: no-repeat; Colocar na responsividade quando a tela for menos que 1024px */
   background-image:url(${(props) => props.sourceBackgroundImage}) ;
+  /* background-repeat: no-repeat; Colocar na responsividade quando a tela for menos que 1024px */
 `;
 
 export const LeftControl = styled.div`

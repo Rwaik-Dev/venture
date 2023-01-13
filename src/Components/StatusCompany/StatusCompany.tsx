@@ -2,17 +2,17 @@ import React from "react";
 import { Container, StatusCard, Name, SmallDescription } from "./styles";
 import {
   PeoplesIcons,
-  CoinIcon,
-  CompanyIcon,
-  BusIcon,
+  SimbolDollar,
+  Bus,
+  SedesLocations
 } from "../../Midea/Icons/Icons";
 
 const StatusCompany = () => {
-  const PREFIX_SIZE = "140px";
+  const PREFIX_SIZE = "180px";
   return (
     <Container>
       <StatusCard>
-        <BusIcon width={PREFIX_SIZE} height={PREFIX_SIZE} />
+        <Bus width={PREFIX_SIZE} height={PREFIX_SIZE} />
         <Name>Frota</Name>
         <SmallDescription>
           A Venture acaba de lançar uma nova frota de ônibus modernos, equipados
@@ -23,7 +23,7 @@ const StatusCompany = () => {
         </SmallDescription>
       </StatusCard>
       <StatusCard>
-        <CompanyIcon width={PREFIX_SIZE} height={PREFIX_SIZE} />
+        <SedesLocations width={PREFIX_SIZE} height={PREFIX_SIZE} />
         <Name>Sedes</Name>
         <SmallDescription>
           Com 35 sedes espalhadas por todo o Brasil, a nossa empresa vem
@@ -37,7 +37,7 @@ const StatusCompany = () => {
         </SmallDescription>
       </StatusCard>
       <StatusCard>
-        <CoinIcon width={PREFIX_SIZE} height={PREFIX_SIZE} />
+        <SimbolDollar width={PREFIX_SIZE} height={PREFIX_SIZE} />
         <Name>Investimentos</Name>
         <SmallDescription>
           A Venture tem realizado significativos investimentos para modernizar

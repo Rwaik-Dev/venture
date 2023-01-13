@@ -1,4 +1,5 @@
 import React from 'react'
+import CardValores from '../../Components/CardValores/CardValores'
 import Carrossel from '../../Components/Carrossel/Carrossel'
 import Footer from '../../Components/Footer/Footer'
 import HeaderPage from '../../Components/Header/HeaderPage'
@@ -13,6 +14,7 @@ const HomePage = () => {
     <Container>
       <HeaderPage/>
       <Carrossel/>
+      <CardValores/>
       <StatusCompany/>
       <InformationsCards/>
       <Footer/>

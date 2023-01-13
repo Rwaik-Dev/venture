@@ -1,19 +1,26 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { Container, Image, Title, TextInformation } from "./styles";
 
-interface ICardsProps{
-  sourceImage: string;
+interface ICardsProps {
   title: string;
-  textInformation: string
+  textInformation: string;
+  children?: ReactNode
 }
 
-const Cards:React.FC<ICardsProps> = ({sourceImage, title, textInformation}) => {
+const Cards: React.FC<ICardsProps> = ({
+  title,
+  textInformation,
+  children
+}) => {
   return (
-  <Container>
-    <Image src={sourceImage}/>
-    <Title>{title}</Title>
-    <TextInformation>{textInformation}</TextInformation>
-  </Container>);
+    <Container>
+      <Image>
+      {children}
+      </Image>
+      <Title>{title}</Title>
+      <TextInformation>{textInformation}</TextInformation>
+    </Container>
+  );
 };
 
 export default Cards;
