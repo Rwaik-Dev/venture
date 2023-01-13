@@ -201,6 +201,59 @@ export const endereçoSedes = [
   },
 ];
 
+export const comentario = [
+  {
+    nome: "Joana Pereira",
+    comentario:
+      "O Venture Transporte Publico é uma empresa muito segura, confiável e com ótimos serviços. Recomendo",
+  },
+  {
+    nome: "Antonio Almeida",
+    comentario:
+      "Gostei muito do serviço prestado pelo Venture Transporte Publico, eles são super atenciosos e prestativos.",
+  },
+  {
+    nome: "Miguel Silva",
+    comentario:
+      "Os motoristas do Venture Transporte Publico são incríveis, sempre atentos e responsáveis.",
+  },
+  {
+    nome: "José Carvalho",
+    comentario:
+      "Recomendo o Venture Transporte Publico, eles são muito profissionais e competentes.",
+  },
+  {
+    nome: "Rita Martins",
+    comentario:
+      "Achei o Venture Transporte Publico muito confiável e prestativo. Super recomendo.",
+  },
+  {
+    nome: "Ana Costa",
+    comentario:
+      "O Venture Transporte Publico é uma empresa muito segura e responsável. Adorei.",
+  },
+  {
+    nome: "Francisco Gomes",
+    comentario:
+      "Gostei muito da experiência com o Venture Transporte Publico, eles são muito profissionais.",
+  },
+  {
+    nome: "Luísa Reis",
+    comentario:
+      "O serviço oferecido pelo Venture Transporte Publico é incrível, eles são muito prestativos e atenciosos.",
+  },
+  {
+    nome: "Pedro Costa",
+    comentario:
+      "O Venture Transporte Publico é muito confiável. Recomendo a todos.",
+  },
+  {
+    nome: "Sandra Pinto",
+    comentario:
+      "O Venture Transporte Publico oferece ótimos serviços, são muito responsáveis e comprometidos.",
+  },
+];
+
 export const dataImage = [
   "https://i.pinimg.com/originals/bd/a5/be/bda5be61177acdb5fd46c3219f8b81a0.jpg",
   "https://cdn.stocksnap.io/img-thumbs/960w/passenger-vehicle_06H84R1IBB.jpg",
