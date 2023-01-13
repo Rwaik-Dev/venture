@@ -7,7 +7,11 @@ import {
   Contacts,
   Redirect,
 } from "./style";
-import { GitHubIcon, InstagramLogo, LinkedInLogo } from "../../Icons/Icons";
+import {
+  GitHubIcon,
+  InstagramLogo,
+  LinkedInLogo,
+} from "../../Midea/Icons/Icons";
 
 const Footer = () => {
   const sizesLogo = ["30px", "30px"];

@@ -1,5 +1,5 @@
 import React from "react";
-import { Marca } from "../../Icons/Icons";
+import { MarcaBranco } from "../../Midea/Images/Images";
 import { Button, Container, Divider, DivImage } from "./styles";
 
 const HeaderPage = () => {
@@ -7,7 +7,7 @@ const HeaderPage = () => {
     <Container>
       <Divider>
         <DivImage>
-          <Marca />
+          <MarcaBranco />
         </DivImage>
       </Divider>
       <Divider>

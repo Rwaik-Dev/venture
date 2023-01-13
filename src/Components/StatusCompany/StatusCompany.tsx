@@ -5,7 +5,7 @@ import {
   CoinIcon,
   CompanyIcon,
   BusIcon,
-} from "../../Icons/Icons";
+} from "../../Midea/Icons/Icons";
 
 const StatusCompany = () => {
   const PREFIX_SIZE = "140px";
@@ -53,14 +53,13 @@ const StatusCompany = () => {
         <PeoplesIcons width={PREFIX_SIZE} height={PREFIX_SIZE} />
         <Name>Colaboradores</Name>
         <SmallDescription>
-          Na Venture acreditamos que nossos colaboradores são o
-          nosso maior patrimônio. Por isso, trabalhamos diariamente para
-          oferecer a eles um ambiente de trabalho seguro, motivador e inovador,
-          em que possam desenvolver suas habilidades e contribuir para o
-          crescimento da nossa empresa. Nossos colaboradores são nossos
-          parceiros, e incentivamos a equipe a pensar de forma criativa,
-          colaborativa e ética para que possamos alcançar os melhores
-          resultados.
+          Na Venture acreditamos que nossos colaboradores são o nosso maior
+          patrimônio. Por isso, trabalhamos diariamente para oferecer a eles um
+          ambiente de trabalho seguro, motivador e inovador, em que possam
+          desenvolver suas habilidades e contribuir para o crescimento da nossa
+          empresa. Nossos colaboradores são nossos parceiros, e incentivamos a
+          equipe a pensar de forma criativa, colaborativa e ética para que
+          possamos alcançar os melhores resultados.
         </SmallDescription>
       </StatusCard>
     </Container>

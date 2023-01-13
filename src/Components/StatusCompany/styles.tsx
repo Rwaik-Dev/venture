@@ -1,10 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
+  width: 99%;
   display: flex;
   gap: 5%;
-  margin: 25px 0;
+  margin: 25px 10px;
+  padding: 10px;
+  border-radius: 20px;
+  background: rgb(236, 236, 236);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 `;
 export const StatusCard = styled.div`
   width: calc(90% / 4);

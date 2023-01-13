@@ -314,26 +314,4 @@ export const CoinIcon: React.FC<IconsProps> = ({ width, height }) => {
   );
 };
 
-export const Logo = () => {
-  let source = require("./logo.png");
-  return (
-    <img
-      width={"100%"}
-      height={"100%"}
-      src={source}
-      alt="Logo Venture Transporte"
-    />
-  );
-};
 
-export const Marca = () => {
-  let source = require("./marca.png");
-  return (
-    <img
-      width={"100%"}
-      height={"100%"}
-      src={source}
-      alt="Logo Venture Transporte"
-    />
-  );
-};
