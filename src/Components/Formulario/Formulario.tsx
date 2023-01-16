@@ -6,14 +6,22 @@ import {
   TextAreaForm,
   SelectForm,
   OptionsForm,
+  ButtonForm,
 } from "./style";
 
 const Formulario = () => {
   const [formData, setFormData] = useState([]);
+
+  function formValidate(){
+    if(formData.length){
+      return 0
+    }
+  }
   return (
-    <Container>
+    <Container name="formReclamacao" onSubmit={() => alert("Reclamação enviada com sucesso")}>
     <LabelForm>Nome</LabelForm>
       <InputsForm
+      required
         type={"text"}
         name="nome"
         onChange={(e) => {
@@ -26,6 +34,7 @@ const Formulario = () => {
     <LabelForm>Sobrenome</LabelForm>
 
       <InputsForm
+      required
         type={"text"}
         name="sobrenome"        
         onChange={(e) => {
@@ -39,6 +48,7 @@ const Formulario = () => {
     <LabelForm>Email</LabelForm>
 
         <InputsForm
+        required
         type={"email"}
         name="email"        
         onChange={(e) => {
@@ -52,6 +62,7 @@ const Formulario = () => {
     <LabelForm>Numero do Ônibus</LabelForm>
 
         <InputsForm
+        required
         type={"text"}
         name="numeroOnibus"        
         onChange={(e) => {
@@ -66,6 +77,7 @@ const Formulario = () => {
 
       <SelectForm
         name="linha"
+        required
         onChange={(e) => {
           setFormData({
             ...formData,
@@ -82,6 +94,8 @@ const Formulario = () => {
         <LabelForm>Informe o ocorrido abaixo:</LabelForm>
         <TextAreaForm
         name="message"
+        required
+        rows={15}
         onChange={(e) => {
             setFormData({
                 ...formData,
@@ -89,6 +103,7 @@ const Formulario = () => {
             })
         }}
         />
+        <ButtonForm>Enviar Reclamação</ButtonForm>
     </Container>
   );
 };
