@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container, ImagePoster, LeftControl, RightControl } from "./style";
-import {dataImage as images}  from "../../Data/data" 
+import {dataImagesCarrosel as images}  from "../../Data/data" 
 
 const Carrossel = () => {
   const [source, setSource] = useState(images[0]);

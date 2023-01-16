@@ -3,11 +3,12 @@ import styled from "styled-components";
 export const Container = styled.form`
   width: 50%;
   display: flex;
+  margin: 25px 0px 100px 0px;
   flex-direction: column;
   padding: 1%;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 `;
 
 export const InputsForm = styled.input`
@@ -63,6 +64,6 @@ export const ButtonForm = styled.button`
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  margin: 18px 0 ;
-  margin-left: 15% ;
+  margin: 18px 0;
+  margin-left: 15%;
 `;
