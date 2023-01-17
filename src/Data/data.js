@@ -7,7 +7,8 @@ const fakeDate = dia + "/" + mes + "/" + ano;
 
 export const dataCards = [
   {
-    img: "http://www.rodap.com.br/wp-content/uploads/2015/02/Quadrodehorrios.png",
+    id: 1,
+    img: "https://img.freepik.com/vetores-gratis/passageiros-dos-desenhos-animados-em-pe-no-ponto-de-onibus_74855-6287.jpg?w=2000",
     title: "Tempo de espera elevado",
     materiaCompleta:
       "A Venture está ciente da demora entre cada ônibus e estamos trabalhando para melhorar a qualidade e otimizar o serviço. Estamos comprometidos em oferecer um serviço de qualidade que satisfaça os nossos clientes.Para garantir que os nossos passageiros cheguem ao seu destino de forma pontual, a Venture tem investido tanto tempo quanto recursos para melhorar a qualidade e otimizar o serviço. Estamos investindo em novas tecnologias, melhorando a manutenção dos nossos veículos e desenvolvendo novas soluções para aumentar a eficiência operacional. Incentivamos também os nossos motoristas a seguirem o horário previamente determinado para cada ônibus. Estamos comprometidos em trabalhar para otimizar o serviço de transporte e proporcionar aos nossos passageiros uma viagem segura e confortável. Agradecemos a compreensão e apoio dos nossos clientes. Se você tiver alguma dúvida ou sugestão, por favor, não hesite em contactar-nos. Estamos à disposição para ajudar. Obrigado pela sua preferência. Atenciosamente",
@@ -15,7 +16,8 @@ export const dataCards = [
       "Informativo sobre a demora de 10 minutos entre cada viagem. Saiba mais",
   },
   {
-    img: "https://c4.wallpaperflare.com/wallpaper/142/751/831/landscape-anime-digital-art-fantasy-art-wallpaper-thumb.jpg",
+    id: 2,
+    img: "http://www.rodap.com.br/wp-content/uploads/2015/02/Quadrodehorrios.png",
     title: "Horarios de Onibus",
     textInformation:
       "A Venture informa que os horários de ônibus serão alterados a partir do próximo dia " +
@@ -29,7 +31,8 @@ export const dataCards = [
       ". Aproveitamos para informar que a Venture disponibiliza aos seus passageiros, além dos horários de ônibus, informações a respeito de tarifas, itinerários, entre outros.Agradecemos a sua preferência e esperamos que continuemos a servi-lo da melhor forma possível.Atenciosamente,Venture",
   },
   {
-    img: "https://c4.wallpaperflare.com/wallpaper/142/751/831/landscape-anime-digital-art-fantasy-art-wallpaper-thumb.jpg",
+    id: 3,
+    img: "https://img.freepik.com/vetores-premium/sede-e-filiais-da-empresa_18660-1050.jpg",
     title: "Nossas sedes",
     materiaCompleta:
       "A Venture é uma empresa de transporte público que oferece serviços de transporte para todo o Brasil. A empresa conta com 35 sedes espalhadas por todo o país, incluindo grandes cidades como São Paulo, Rio de Janeiro, Belo Horizonte, Curitiba, Brasília, Recife e Porto Alegre.\nA empresa oferece serviços de transporte com ônibus, micro-ônibus, vans e carros, além de serviços de aluguel de veículos para eventos, turismo, transferências e outros. Todos os veículos são equipados com ar-condicionado, wi-fi e outras comodidades para garantir o conforto dos passageiros.\nA Venture Transporte Público também oferece serviços de fretamento para empresas, com tarifas especiais. Os veículos são equipados com sistemas de monitoramento e rastreamento, garantindo segurança e confiabilidade para os passageiros.\nAlém disso, a Venture Transporte Público oferece serviços de manutenção para garantir que os veículos estejam sempre em plenas condições de uso. Os serviços incluem revisão, substituição de peças, lubrificação, troca de óleo e outros serviços de manutenção.\nA Venture tem como compromisso oferecer serviços de transporte de qualidade, seguros e confiáveis para todos os seus passageiros e clientes.",
@@ -37,7 +40,8 @@ export const dataCards = [
       "A Venture Transporte conta com 35 sedes espalhadas pelo Brasil. Elas estão localizadas nos estados de São Paulo, Rio de Janeiro, Minas Gerais, Paraná, Bahia, Goiás, Santa Catarina e muitas outras. Confira aqui",
   },
   {
-    img: "https://c4.wallpaperflare.com/wallpaper/142/751/831/landscape-anime-digital-art-fantasy-art-wallpaper-thumb.jpg",
+    id: 4,
+    img: "https://grupoahora.net.br/wp-content/uploads/2022/06/2022_06_14_Jhon-Willian-Tedeschi_Aumento-Passagem-Estrela-scaled.jpg",
     title: "Reajuste da passagem",
     textInformation:
       "A Venture acaba de anunciar um aumento na tarifa de ônibus, que passará de R$3,00 para R$3,35. Saiba mais",
