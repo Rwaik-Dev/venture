@@ -4,6 +4,7 @@ import Footer from "../../Components/Footer/Footer";
 import HeaderPage from "../../Components/Header/HeaderPage";
 import { Container, DivImage, Text } from "./styles";
 import { Marca } from "../../Midea/Images/Images";
+import Comentarios from "../../Components/Comentarios/Comentarios";
 
 const SobreNos = () => {
   return (
@@ -62,6 +63,7 @@ const SobreNos = () => {
           <br />
         </Text>
         <CardValores />
+        <Comentarios/>
       </Container>
       <Footer />
     </>

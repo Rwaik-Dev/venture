@@ -112,8 +112,8 @@ export const SedesLocations: React.FC<IconsProps> = ({ width, height }) => {
 export const PeoplesIcons: React.FC<IconsProps> = ({ width, height }) => {
   return (
     <svg
-    version="1.1"
-    id="Layer_1"
+      version="1.1"
+      id="Layer_1"
       width={width}
       height={height}
       xmlns="http://www.w3.org/2000/svg"
@@ -604,3 +604,77 @@ export const GitHubIcon: React.FC<IconsProps> = ({ width, height }) => {
   );
 };
 
+//Icones usados nos Comentarios
+
+export const UserWoman: React.FC<IconsProps> = ({ width, height }) => {
+  return (
+    <svg
+      height={height}
+      width={width}
+      version="1.1"
+      id="Layer_1"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 393.051 393.051"
+    >
+      <path
+        fill="#C19D7B"
+        d="M196.687,0L196.687,0C139.281,0,92.671,46.61,92.671,104.016v126.836h207.774V104.016
+	C300.444,46.675,254.093,0,196.687,0z"
+      />
+      <g>
+        <circle fill="#EEB490" cx="118.853" cy="147.523" r="26.182" />
+        <circle fill="#EEB490" cx="274.521" cy="147.523" r="26.182" />
+        <path
+          fill="#EEB490"
+          d="M326.626,267.766l-80.679-9.956v-35.426h-99.038v35.426l-52.945,6.594
+		c6.529,41.891,47.192,139.119,285.867,82.554v-19.135C379.83,297.115,357.01,271.451,326.626,267.766z"
+        />
+      </g>
+      <path
+        fill="#FACCB4"
+        d="M126.998,121.083v49.261c0,37.754,29.608,69.689,67.62,70.723c39.046,1.034,71.24-30.384,71.24-69.43
+	v-50.554c0-12.606-10.214-22.562-22.562-22.562H149.56C137.212,98.521,126.998,108.477,126.998,121.083z"
+      />
+      <path
+        fill="#FF667C"
+        d="M93.964,264.404l-27.798,3.426c-30.125,3.685-52.945,29.35-52.945,59.733v65.487h366.545v-46.352
+	C140.897,403.265,100.558,306.036,93.964,264.404z"
+      />
+    </svg>
+  );
+};
+
+export const UserMan: React.FC<IconsProps> = ({ width, height }) => {
+  return (
+    <svg
+    height={height}
+    width={width}
+      version="1.1"
+      id="Layer_1"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 393.051 393.051"
+    >
+      <path
+        fill="#FF667C"
+        d="M262.109,218.505H130.618c-60.251,0-109.253,49.002-109.253,109.253v65.293h350.319v-65.228
+	C371.362,267.248,322.683,218.505,262.109,218.505z"
+      />
+      <path
+        fill="#C19D7B"
+        d="M237.737,0H154.99c-31.677,0-57.406,25.665-57.406,57.406v63.16h198.077v-63.16
+	C295.402,25.665,269.737,0,237.737,0z"
+      />
+      <g>
+        <circle fill="#EEB490" cx="196.364" cy="208.549" r="49.002" />
+        <circle fill="#EEB490" cx="126.416" cy="120.824" r="28.832" />
+        <circle fill="#EEB490" cx="266.828" cy="120.824" r="28.832" />
+      </g>
+      <path
+        fill="#FACCB4"
+        d="M157.317,63.16c-18.877,0-34.327,14.933-34.586,33.81v0.259v52.105
+	c0,40.081,31.418,73.891,71.499,75.184c41.632,1.034,75.701-32.259,75.701-73.632V97.164V96.97c0-18.877-15.709-33.81-34.586-33.81
+	H157.317z"
+      />
+    </svg>
+  );
+};

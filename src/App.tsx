@@ -7,7 +7,7 @@ import Noticias from './Pages/Noticias/Noticias';
 function App() {
   return (
     <div>
-      <Noticias/>
+      <SobreNos/>
     </div>
   );
 }

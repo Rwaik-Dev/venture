@@ -207,52 +207,72 @@ export const endereçoSedes = [
 
 export const comentario = [
   {
+    sexo: "feminino",
     nome: "Joana Pereira",
+    dias: 100,
     comentario:
       "O Venture Transporte Publico é uma empresa muito segura, confiável e com ótimos serviços. Recomendo",
   },
   {
+    sexo: "masculino",
     nome: "Antonio Almeida",
+    dias: 115,
     comentario:
       "Gostei muito do serviço prestado pelo Venture Transporte Publico, eles são super atenciosos e prestativos.",
   },
   {
+    sexo: "masculino",
     nome: "Miguel Silva",
+    dias: 16,
     comentario:
       "Os motoristas do Venture Transporte Publico são incríveis, sempre atentos e responsáveis.",
   },
   {
+    sexo: "masculino",
     nome: "José Carvalho",
+    dias: 41,
     comentario:
       "Recomendo o Venture Transporte Publico, eles são muito profissionais e competentes.",
   },
   {
+    sexo: "feminino",
     nome: "Rita Martins",
+    dias: 120,
     comentario:
       "Achei o Venture Transporte Publico muito confiável e prestativo. Super recomendo.",
   },
   {
+    sexo: "feminino",
     nome: "Ana Costa",
+    dias: 7,
     comentario:
       "O Venture Transporte Publico é uma empresa muito segura e responsável. Adorei.",
   },
   {
+    sexo: "masculino",
     nome: "Francisco Gomes",
+    dias: 32,
     comentario:
       "Gostei muito da experiência com o Venture Transporte Publico, eles são muito profissionais.",
   },
   {
+    sexo: "feminino",
     nome: "Luísa Reis",
+    dias: 98,
     comentario:
       "O serviço oferecido pelo Venture Transporte Publico é incrível, eles são muito prestativos e atenciosos.",
   },
   {
+    sexo: "masculino",
     nome: "Pedro Costa",
+    dias: 111,
     comentario:
       "O Venture Transporte Publico é muito confiável. Recomendo a todos.",
   },
   {
+    sexo: "feminino",
     nome: "Sandra Pinto",
+    dias: 40,
     comentario:
       "O Venture Transporte Publico oferece ótimos serviços, são muito responsáveis e comprometidos.",
   },
