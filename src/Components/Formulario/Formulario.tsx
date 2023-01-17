@@ -12,11 +12,6 @@ import {
 const Formulario = () => {
   const [formData, setFormData] = useState([]);
 
-  function formValidate(){
-    if(formData.length){
-      return 0
-    }
-  }
   return (
     <Container name="formReclamacao" onSubmit={() => alert("Reclamação enviada com sucesso")}>
     <LabelForm>Nome</LabelForm>

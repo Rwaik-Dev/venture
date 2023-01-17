@@ -1,6 +1,7 @@
 import React from "react";
 import { MarcaBranco } from "../../Midea/Images/Images";
 import { Button, Container, Divider, DivImage } from "./styles";
+import { Link } from "react-router-dom";
 
 const HeaderPage = () => {
   return (
@@ -11,10 +12,18 @@ const HeaderPage = () => {
         </DivImage>
       </Divider>
       <Divider>
-        <Button onClick={() => alert("Botão Home")}>Home</Button>
-        <Button onClick={() => alert("Botão Sobre Nós")}>Sobre nós</Button>
-        <Button onClick={() => alert("Botão Reclamações")}>Reclamaçoes</Button>
-        <Button onClick={() => alert("Botão Noticias")}>Noticias</Button>
+        <Link to={"/"}>
+          <Button>Home</Button>
+        </Link>
+        <Link to={"/sobre-nos"}>
+          <Button>Sobre nós</Button>
+        </Link>
+        <Link to={"/reclamacoes"}>
+          <Button>Reclamaçoes</Button>
+        </Link>
+        <Link to={"/noticias"}>
+          <Button>Noticias</Button>
+        </Link>
       </Divider>
       <Divider>
         <></>
